@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+*:focus {
+  outline: none !important
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* 서비스 페이지 */
+.service-wrap1 {
+  padding-bottom: 180px;
+}
+
+.service-banner {
+  max-width: 570px;
+  max-height: 100%;
+}
+
+.ft-50 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.ft-50 .mint-txt {
+  color: #23DBC2;
+}
+
+.s-mainbox {
+  width: 100%;
+  margin: 110px auto;
+}
+
+.service-maintxt {
+  font-size: 20px;
+}
+
+.service-wrap2 {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.service-wrap2 .process-eng {
+  font-size: 20px;
+  color: #BDBDBD;
+  margin-bottom: 5px;
+}
+
+.service-wrap2 .process-kor {
+  font-size: 28px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.step-line {
+  width: 70%;
+  height: 0px;
+  border: 1px dashed #E1E1E1;
+  margin: 0 auto;
+  position: relative;
+  top: 118px;
+}
+
+.step-circle {
+  width: 110px;
+  height: 110px;
+  border: 1.5px solid #E1E1E1;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 32px 0px;
+  margin: 60px auto 20px;
+}
+
+.mint-span {
+  font-family: 'Poppins', sans-serif;
+  color: #23DBC2;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.step-txt {
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.service-wrap3 {
+  margin-bottom: 224px;
+}
+
+.service3-img {
+  background: url('../img/sugarmanwork@2x.jpg');
+  width: 665px;
+  height: 430px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 665px;
+  max-height: 430px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+.img-shadow {
+  width: 665px;
+  height: 430px;
+  background-color: #EEEEEE;
+}
+
+.service-wrap3 h3 {
+  margin-top: 120px;
+  font-size: 32px;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-wrap3 span {
+  font-weight: 600;
+}
+
+.service-wrap3 img {
+  max-width: 106px;
+  max-height: 95px;
+  position: absolute;
+  right: 0;
+  top: 16%;
+  z-index: 0;
+}
+
+/* 이용료 페이지 */
+.price-wrap1 {
+  padding-bottom: 130px;
+}
+
+.p-mainbox {
+  width: 100%;
+  margin: 110px auto;
+}
+
+.p-mainbox .ft-50 {
+  margin-bottom: 15px;
+}
+
+.price-maintxt {
+  font-size: 20px;
+}
+
+.img-shadow1 {
+  width: 644px;
+  height: 450px;
+  background-color: #EEEEEE;
+}
+
+.price-img {
+  background: url('../img/banner-1@2x.jpg');
+  width: 644px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 644px;
+  max-height: 450px;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+}
+
+.price-wrap2 {
+  padding-bottom: 145px;
+}
+
+.profile-area img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  opacity: 0.5;
+  margin-bottom: 25px;
+}
+
+.active {
+  border: 2px solid #23DBC2;
+  opacity: 1 !important;
+}
+
+.price-wrap2 .review-area {
+  font-size: 18px;
+}
