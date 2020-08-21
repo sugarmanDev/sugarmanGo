@@ -343,6 +343,7 @@ ul {
 /* 서비스 페이지 */
 .service-wrap1 {
   padding-bottom: 180px;
+  padding-top: 180px;
 }
 
 .service-banner {
@@ -468,6 +469,7 @@ ul {
 /* 이용료 페이지 */
 .price-wrap1 {
   padding-bottom: 130px;
+  padding-top: 200px;
 }
 
 .p-mainbox {
