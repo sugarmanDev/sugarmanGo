@@ -6,9 +6,13 @@
     .footer-right{
         padding-bottom: 50px;
     }
-    .form-box {
-        margin-top: 15px;
+    .right-area{
+        display: none;
     }
+    .half {
+        width: 100%;
+      }
+
 }
 
 @media (max-width:767px){
@@ -49,13 +53,7 @@
     .main-banner-text{
       font-size: 40px;
     }
-    .right-area{
-        display: none;
-    }
-    .half {
-        width: 100%;
-        height: 100vh;
-      }
+ 
 }
 
 @media(max-width:457px){
@@ -80,6 +78,9 @@
     }
     .location-banner-text{
         font-size: 18px;
+    }
+    .navbar {
+        padding: 20px 20px !important;
     }
 }
 
