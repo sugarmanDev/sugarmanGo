@@ -69,6 +69,14 @@ ul {
   font-size: 17px;
 }
 
+.navbar .nav-item .nav-link:hover {
+  color: #23DBC2;
+}
+
+.nav-active {
+  color: #23DBC2 !important;
+}
+
 .nav-item .nav-bar-btn {
   width: 108px;
   height: 42px;
@@ -266,7 +274,7 @@ ul {
 }
 
 .footer .footer-logo {
-  width: 130px;
+  width: 190px;
   margin-bottom: 25px;
 }
 
@@ -773,7 +781,6 @@ select::-ms-expand {
   background-position: center;
   background-size: cover;
   height: 800px;
-  margin-top: -85px;
 }
 
 .location-banner-subtext {
@@ -860,7 +867,6 @@ select::-ms-expand {
 .fixed-head-white .logo-w {
   display: none !important;
 }
-
 
 /* 모바일메뉴 */
 .mobile_show {
