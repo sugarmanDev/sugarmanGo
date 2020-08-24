@@ -6,6 +6,9 @@
     .footer-right{
         padding-bottom: 50px;
     }
+    .form-box {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width:767px){
@@ -20,6 +23,12 @@
     }
     .location-con-btn{
         text-align: left;
+    }
+    .service-wrap2-line{
+        display: none;
+    }
+    .service-wrap2-con{
+        max-width: 50%;
     }
 }
 
@@ -40,6 +49,13 @@
     .main-banner-text{
       font-size: 40px;
     }
+    .right-area{
+        display: none;
+    }
+    .half {
+        width: 100%;
+        height: 100vh;
+      }
 }
 
 @media(max-width:457px){
@@ -85,5 +101,8 @@
     }
     .main-banner-text{
       font-size: 35px;
+    }
+    .service-wrap2-con{
+        max-width: 100%;
     }
 }

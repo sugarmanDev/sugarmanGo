@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif !important;
+  overflow-x: hidden;
 }
 
 body * {
@@ -174,6 +175,7 @@ ul {
   width: 100%;
 }
 
+
 .main-img-sec .main-img {
   padding-bottom: 30px;
 }
@@ -339,28 +341,28 @@ ul {
   padding-top: 180px;
 }
 
-.service-banner {
-  max-width: 570px;
-  max-height: 100%;
-}
-
-.ft-50 {
+.service-wrap1 .service-wrap1-text{
   font-size: 50px;
-  margin-bottom: 15px;
+  color: #000;
+  padding-top: 100px;
 }
 
-.ft-50 .mint-txt {
-  color: #23DBC2;
-}
-
-.s-mainbox {
+.service-wrap1 img{
   width: 100%;
-  margin: 110px auto;
+  max-width: 665px;
 }
 
-.service-maintxt {
-  font-size: 20px;
+.service-maintxt{
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 32px;
 }
+
+.mint-txt {
+  color: #18DCB4;
+}
+
+
 
 .service-wrap2 {
   text-align: center;
@@ -462,21 +464,33 @@ ul {
 /* 이용료 페이지 */
 .price-wrap1 {
   padding-bottom: 130px;
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
-.price-wrap1 img {
+.price-text-con{
+  font-size: 50px;
+  line-height: 65px;
+  z-index: 999;
+  margin-bottom: 15px;
+}
+
+.price-text-con span{
+  font-weight: 400 !important;
+}
+
+.main-text.price-text img {
   width: 106px;
   height: 95px;
   position: absolute;
-  right: 40%;
-  top: 12%;
-  z-index: 0;
+  top: 0px;
+  right: 100px;
+  z-index: 9;
 }
 
-.price-wrap1 .ft-50 {
-  position: relative;
-  z-index: 1;
+.main-img.price-img img {
+  box-shadow: 10px 10px #00000029;
+  max-width: 665px;
+  width: 100%;
 }
 
 .p-mainbox {
@@ -489,7 +503,9 @@ ul {
 }
 
 .price-maintxt {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400 !important;
+  letter-spacing: -0.5px;
 }
 
 .img-shadow1 {
@@ -498,18 +514,7 @@ ul {
   background-color: #EEEEEE;
 }
 
-.price-img {
-  background: url('../img/banner-1@2x.jpg');
-  width: 100%;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 644px;
-  max-height: 450px;
-  position: relative;
-  bottom: 20px;
-  right: 20px;
-}
+
 
 .price-wrap2 {
   padding-bottom: 145px;
@@ -556,13 +561,13 @@ ul {
   margin-bottom: 0;
 }
 
-.price-wrap4 h2 {
-  margin-bottom: 5px;
+.price-wrap4 span {
   font-size: 28px;
 }
 
 .price-wrap4 .price4-txt {
   font-size: 18px;
+  font-weight: 400 !important;
 }
 
 .price-wrap4 .price-table {
@@ -596,33 +601,44 @@ ul {
   padding-bottom: 150px;
 }
 
-.back-box {
-  width: 100%;
-  height: 238px;
-  background-color: #FAFAFA;
-  display: inline-block;
-  padding: 80px 60px;
+.price-wrap5-box{
+  background: #FAFAFA;
+  padding-top: 78px;
+  padding-bottom: 78px;
+  padding-left: 65px;
+  padding-right: 100px;
 }
 
-.back-box img {
-  max-width: 136px;
-  max-height: 83px;
+.price-wrap5-text{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.back-box p {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0px 50px 0px 42px;
+.price-wrap5-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.back-box button {
+.price-wrap5 button{
+  width: 160px;
+  height: 50px;
+  background: #23DBC2;
+  border-style: none;
+  color: #fff;
   font-size: 17px;
-  background-color: #23DBC2;
-  max-height: 50px;
-  padding: 13px 24px;
-  border: 1px solid #23DBC2;
-  color: #ffffff;
 }
+
+.price-wrap5 img{
+  width: 135px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 /* 시작하기 페이지 */
 .full-area {
