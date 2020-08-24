@@ -54,6 +54,7 @@ ul {
   z-index: 999;
   height: 60px;
   font-weight: 400;
+  padding-right: 15px;
 }
 
 /* nav */
@@ -836,7 +837,7 @@ select::-ms-expand {
 .fixed-head-white {
   background: #fff;
   color: #000;
-  z-index: 9999
+  z-index: 999
 }
 
 .fixed-head-white .nav-link {
@@ -849,7 +850,7 @@ select::-ms-expand {
   left: 0px;
   width: 100%;
   transition: all .5s;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .top-nav.fixed-head {
@@ -888,10 +889,15 @@ select::-ms-expand {
   height: 100vh;
   background-color: #fff;
   color: #000;
-  z-index: 99;
+  z-index: 9999;
   top: 0px;
   left: 0px;
   display: none;
+  border-style: none;
+}
+
+.navbar-light .navbar-toggler{
+  border-style: none;
 }
 
 .close-btn {
@@ -900,6 +906,7 @@ select::-ms-expand {
   right: 20px;
   border-style: none;
   background: transparent;
+  border-style: none;
 }
 
 .close-btn span {

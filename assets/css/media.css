@@ -79,6 +79,9 @@
     .location-banner-text{
         font-size: 18px;
     }
+    .navbar {
+        padding: 20px 20px !important;
+    }
 }
 
 @media (max-width:350px){
