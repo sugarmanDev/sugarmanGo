@@ -43,7 +43,6 @@ ul {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  margin-top: -85px;
 }
 
 /* 탑 띠배너 */
@@ -816,6 +815,43 @@ select::-ms-expand {
   color: #fff;
   font-size: 17px;
 }
+
+/* nav-scroll */
+.fixed-head-white {
+  background: #fff;
+  color: #000;
+  z-index: 9999
+}
+
+.fixed-head-white .nav-link {
+  color: #000 !important;
+}
+
+.top-nav {
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  transition: all .5s;
+  z-index: 9999;
+}
+
+.top-nav.fixed-head {
+  top: 0px;
+}
+
+.logo-r {
+  display: none;
+}
+
+.fixed-head-white .logo-r {
+  display: block !important;
+}
+
+.fixed-head-white .logo-w {
+  display: none !important;
+}
+
 
 /* 모바일메뉴 */
 

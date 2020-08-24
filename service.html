@@ -17,6 +17,7 @@
 
   <!-- kakao map -->
   <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	95211038176c8b43a1fc3d12e01aed54"></script> -->
+  <script src="./assets/js/click-menu.js"></script>
 </head>
 
 <body>
@@ -223,6 +224,24 @@
         </ul>
       </div>
   </section>
+
+  <script>
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      // 48
+      if (scroll > 48) {
+        $('.top-nav').addClass('fixed-head');
+        if (scroll > 950) {
+          $('.top-nav').addClass('fixed-head-white');
+        } else {
+          $('.top-nav').removeClass('fixed-head-white');
+        }
+      } else {
+        $('.top-nav').removeClass('fixed-head');
+      }
+      console.log(scroll);
+    })
+  </script>
 
 
 </body>

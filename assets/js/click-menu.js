@@ -33,14 +33,3 @@ $(document).on('click', '.event-banner-btn', function() {
   $('.event-banner').remove();
   $('.top-nav').css('top','0px')
 });
-
-var getDomain = window.location.hostname;
-
-var targetDomain = '';
-
-if(getDomain =='sugarmanCargo' || getDomain == 'sugarmandev.github.io') {
-  targetDomain = 'https://gimyo.co.kr/cargo';
-}
-else {
-  targetDomain = 'http://localhost/cargo';
-}
