@@ -147,6 +147,20 @@ button:focus {
   padding-bottom: 130px;
 }
 
+.price-wrap1 img {
+  width: 106px;
+  height: 95px;
+  position: absolute;
+  right: 40%;
+  top: 12%;
+  z-index: 0;
+}
+
+.price-wrap1 .ft-50 {
+  position: relative;
+  z-index: 1;
+}
+
 .p-mainbox {
   width: 100%;
   margin: 110px auto;
@@ -199,4 +213,213 @@ button:focus {
 
 .price-wrap2 .review-area {
   font-size: 18px;
+}
+
+.price-wrap3 {
+  text-align: center;
+  padding-bottom: 180px;
+}
+
+.price-wrap3 img {
+  max-width: 235px;
+  max-height: 251px;
+  margin: 0px auto 32px;
+}
+
+.price-wrap3 span {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.price-wrap3 p {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.price-wrap4 h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+
+.price-wrap4 .price4-txt {
+  font-size: 18px;
+}
+
+.price-wrap4 .price-table {
+  width: 100%;
+  margin: 40px 0px 200px;
+}
+
+.price-wrap4 .price-table th {
+  padding: 20px 100px 20px 0px;
+  border-bottom: 4px solid #18DCB4;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.price-wrap4 .price-table td {
+  padding: 30px 100px 30px 0px;
+  border-bottom: 1px solid #E1E1E1;
+  font-size: 20px;
+}
+
+.price-table .strong {
+  font-weight: 500;
+}
+
+.price-table span {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.price-wrap5 {
+  padding-bottom: 150px;
+}
+
+.back-box {
+  width: 100%;
+  height: 238px;
+  background-color: #FAFAFA;
+  display: inline-block;
+  padding: 80px 60px;
+}
+
+.back-box img {
+  max-width: 136px;
+  max-height: 83px;
+}
+
+.back-box p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px 50px 0px 42px;
+}
+
+.back-box button {
+  font-size: 17px;
+  background-color: #23DBC2;
+  max-height: 50px;
+  padding: 13px 24px;
+  border: 1px solid #23DBC2;
+  color: #ffffff;
+}
+
+/* 시작하기 페이지 */
+.full-area {
+  width: 100%;
+  height: 100vh;
+}
+
+.half {
+  width: 50%;
+  height: 100vh;
+}
+
+.left-area {
+  float: left;
+}
+
+.right-area {
+  float: right;
+}
+
+.banner3-img {
+  background: url('../img/banner-3@2x.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-box {
+  margin-top: 150px;
+}
+
+.form-box h2 {
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.form-box span {
+  color: #18DCB4;
+}
+
+.form-box p {
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 15px;
+}
+
+.form-box .form-btn {
+  width: 100%;
+  height: 60px;
+  background-color: #23DBC2;
+  border: 1px solid #23DBC2;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 14px;
+}
+
+.form-box .form-btn:hover {
+  background: #000;
+  border: 1px solid #000;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+input[id="agree"]+label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label {
+  background: url(../img/check_box.png) no-repeat center/25px 25px;
+}
+
+.agree-txt {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.btn-agree {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.form-select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #E5E5E5;
+  padding: 12px;
+  color: #888888;
+  margin-bottom: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../img/arrow_down.png') no-repeat 98% 50%;
+}
+
+select::-ms-expand {
+  display: none;
 }
