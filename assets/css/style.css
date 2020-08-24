@@ -17,7 +17,7 @@ a:hover {
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: #000;
 }
@@ -32,8 +32,8 @@ ul {
 }
 
 .main-logo {
-  width: 120px !important;
-  height: 50px;
+  max-width: 190px !important;
+  max-height: 25px;
 }
 
 /* 메인페이지 메인배너 */
@@ -174,18 +174,23 @@ ul {
 }
 
 .main-img-sec .main-img img {
-  box-shadow: -10px 10px #00000029;
+  box-shadow: -15px 15px #EEEEEE;
   max-width: 665px;
   width: 100%;
 }
 
+.main-img-sec .price-img img {
+  box-shadow: 15px 15px #EEEEEE;
+  max-width: 665px;
+  width: 100%;
+}
 
 .main-img-sec .main-img {
   padding-bottom: 30px;
 }
 
 .main-img-sec .main-text {
-  padding-left: 50px;
+  /* padding-left: 50px; */
   font-size: 32px;
   display: flex;
   flex-direction: column;
@@ -267,7 +272,7 @@ ul {
 
 .footer .footer-con-2 span {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #E1E1E1;
 }
 
@@ -342,31 +347,32 @@ ul {
 /* 서비스 페이지 */
 .service-wrap1 {
   padding-bottom: 180px;
-  padding-top: 180px;
+  padding-top: 80px;
 }
 
-.service-wrap1 .service-wrap1-text{
+.service-wrap1 .service-wrap1-text {
   font-size: 50px;
   color: #000;
   padding-top: 100px;
+  font-weight: 500;
 }
 
-.service-wrap1 img{
+.service-wrap1 img {
   width: 100%;
   max-width: 665px;
 }
 
-.service-maintxt{
+.service-maintxt {
   font-size: 18px;
   margin-top: 15px;
   line-height: 32px;
+  font-weight: 400;
 }
 
 .mint-txt {
   color: #18DCB4;
+  font-weight: 500 !important;
 }
-
-
 
 .service-wrap2 {
   text-align: center;
@@ -471,15 +477,16 @@ ul {
   padding-top: 150px;
 }
 
-.price-text-con{
+.price-text-con {
   font-size: 50px;
   line-height: 65px;
   z-index: 99;
   margin-bottom: 15px;
+  font-weight: 500;
 }
 
-.price-text-con span{
-  font-weight: 400 !important;
+.price-text-con span {
+  font-weight: 500 !important;
 }
 
 .main-text.price-text img {
@@ -487,7 +494,7 @@ ul {
   height: 95px;
   position: absolute;
   top: 0px;
-  right: 100px;
+  right: 25%;
   z-index: 9;
 }
 
@@ -517,8 +524,6 @@ ul {
   height: 450px;
   background-color: #EEEEEE;
 }
-
-
 
 .price-wrap2 {
   padding-bottom: 145px;
@@ -605,7 +610,7 @@ ul {
   padding-bottom: 150px;
 }
 
-.price-wrap5-box{
+.price-wrap5-box {
   background: #FAFAFA;
   padding-top: 78px;
   padding-bottom: 78px;
@@ -613,20 +618,20 @@ ul {
   padding-right: 100px;
 }
 
-.price-wrap5-text{
+.price-wrap5-text {
   font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.price-wrap5-button{
+.price-wrap5-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.price-wrap5 button{
+.price-wrap5 button {
   width: 160px;
   height: 50px;
   background: #23DBC2;
@@ -635,14 +640,13 @@ ul {
   font-size: 17px;
 }
 
-.price-wrap5 img{
+.price-wrap5 img {
   width: 135px;
   height: 82px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 /* 시작하기 페이지 */
 .full-area {
@@ -764,7 +768,12 @@ select::-ms-expand {
 
 /* location.html */
 .location-banner-wrap {
-  background-image: url(../img/main_banner2.jpg);
+  background-image: url(../img/main_banner2@2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin-top: -85px;
 }
 
 .location-banner-subtext {
@@ -854,7 +863,6 @@ select::-ms-expand {
 
 
 /* 모바일메뉴 */
-
 .mobile_show {
   background-color: #18DCB4;
 }
