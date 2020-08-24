@@ -43,7 +43,6 @@ ul {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  margin-top: -85px;
 }
 
 /* 탑 띠배너 */
@@ -481,7 +480,7 @@ ul {
 .price-text-con {
   font-size: 50px;
   line-height: 65px;
-  z-index: 999;
+  z-index: 99;
   margin-bottom: 15px;
   font-weight: 500;
 }
@@ -825,6 +824,43 @@ select::-ms-expand {
   color: #fff;
   font-size: 17px;
 }
+
+/* nav-scroll */
+.fixed-head-white {
+  background: #fff;
+  color: #000;
+  z-index: 9999
+}
+
+.fixed-head-white .nav-link {
+  color: #000 !important;
+}
+
+.top-nav {
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  transition: all .5s;
+  z-index: 9999;
+}
+
+.top-nav.fixed-head {
+  top: 0px;
+}
+
+.logo-r {
+  display: none;
+}
+
+.fixed-head-white .logo-r {
+  display: block !important;
+}
+
+.fixed-head-white .logo-w {
+  display: none !important;
+}
+
 
 /* 모바일메뉴 */
 .mobile_show {
