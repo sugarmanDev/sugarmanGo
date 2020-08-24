@@ -294,12 +294,9 @@
       // 48
       if (scroll > 48) {
         $('.top-nav').addClass('fixed-head');
-        if (scroll > 950) {
-          $('.top-nav').addClass('fixed-head-white');
-        } else {
-          $('.top-nav').removeClass('fixed-head-white');
-        }
+        $('.top-nav').addClass('fixed-head-white');
       } else {
+        $('.top-nav').removeClass('fixed-head-white');
         $('.top-nav').removeClass('fixed-head');
       }
       console.log(scroll);
