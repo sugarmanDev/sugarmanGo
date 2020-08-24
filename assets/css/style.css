@@ -17,6 +17,11 @@ a:hover {
   text-decoration: none;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
 button:focus {
   outline: 0;
   box-shadow: none;
@@ -810,4 +815,78 @@ select::-ms-expand {
   border-style: none;
   color: #fff;
   font-size: 17px;
+}
+
+/* 모바일메뉴 */
+
+.mobile_show {
+  background-color: #18DCB4;
+}
+
+.arrow-forward {
+  background: none;
+  border: none;
+  font-size: 1.063rem;
+  color: #fff;
+  padding: 22px;
+  width: 100%;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-style: none;
+  background: transparent;
+}
+
+.close-btn span {
+  font-size: 40px;
+}
+
+.mobile-menu ul {
+  padding-left: 0 !important;
+}
+
+.mobile-menu .mobile-menu-list {
+  text-align: center;
+  height: 70%;
+  margin-top: 250px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.mobile-menu .mobile-menu-list a {
+  color: #000;
+}
+
+.mobile-menu .mobile-menu-list li {
+  margin-bottom: 7%;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.mobile-menu .mobile-menu-list button {
+  width: 70%;
+  height: 10%;
+  border-radius: 20px;
+  border: 3px solid #23DBC2;
+  background-color: transparent;
+  color: #23DBC2;
+  font-weight: 600;
 }
