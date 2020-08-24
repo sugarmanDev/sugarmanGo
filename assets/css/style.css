@@ -355,7 +355,7 @@ ul {
 /* 서비스 페이지 */
 .service-wrap1 {
   padding-bottom: 180px;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .service-wrap1 .service-wrap1-text {
@@ -593,10 +593,11 @@ ul {
 }
 
 .price-wrap4 .price-table th {
-  padding: 20px 100px 20px 0px;
+  padding: 20px 50px 20px 0px;
   border-bottom: 4px solid #18DCB4;
   font-weight: 600;
   font-size: 20px;
+  border-top: 0;
 }
 
 .price-wrap4 .price-table td {
@@ -664,7 +665,7 @@ ul {
 
 .half {
   width: 50%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .left-area {
