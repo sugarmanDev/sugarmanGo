@@ -561,7 +561,7 @@ ul {
   padding-bottom: 145px;
 }
 
-.profile-area img {
+.price-wrap2 img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1132,4 +1132,8 @@ a:visited {
 
 .modal-body {
   padding: 40px;
+}
+
+.show_review {
+  display: block !important;
 }

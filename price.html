@@ -108,13 +108,21 @@
         </div>
         <div class="col-md-9">
           <div class="profile-area">
-            <img src="./assets/img/profile.jpg" class="active">
-            <img src="./assets/img/profile.jpg">
-            <img src="./assets/img/profile.jpg">
+            <img src="./assets/img/profile.jpg" class="review-img active" data-img="img1">
+            <img src="./assets/img/cat.jpg" class="review-img" data-img="img2">
+            <img src="./assets/img/dog2.jpg" class="review-img" data-img="img3">
           </div>
-          <p class="review-area">
-            제품 포장까지 완벽하고 편리하게 사용하고 있습니다!<br /> 너무 완벽한데 어쪄죠? 백만번사용하세요!! a부터 z까지 배송이 이루어지니 너무너무 편합니다. 짱짱짱!!<br /> 아 그리고 올때 메로나요!!!
-          </p>
+          <div class="review-area">
+            <p class="img1">
+              제품 포장까지 완벽하고 편리하게 사용하고 있습니다!<br /> 너무 완벽한데 어쪄죠? 백만번사용하세요!! a부터 z까지 배송이 이루어지니 너무너무 편합니다. 짱짱짱!!<br /> 아 그리고 올때 메로나요!!!
+            </p>
+            <p class="img2" style="display:none;">
+              두번째 후기입니다 굿굿!!
+            </p>
+            <p class="img3" style="display:none;">
+              마지막 후기요!!!!! 아주 좋네용
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -288,6 +296,17 @@
   </section>
 
   <script>
+    // $(document).on('click', '.review-img', function() {
+    //   $('.profile-area img').removeClass('active');
+    //   $(this).addClass('active');
+    //   var imgSrc = $(this).attr('data-img');
+    //   var findClass = $('.review-area').children().index();
+    //   console.log(findClass);
+    //
+    // })
+
+
+
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
       // 48
