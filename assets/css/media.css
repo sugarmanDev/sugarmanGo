@@ -1,11 +1,12 @@
 @media (max-width:991px) {
   .footer .footer-con-3 {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     margin-bottom: 30px;
+    margin-top: 0px;
   }
 
   .footer-right {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .right-area {
@@ -28,6 +29,14 @@
     margin-bottom: 0;
   }
 
+  .footer .footer-con-2 span {
+    margin-right: 5px;
+  }
+
+  .footer .footer-con-3 span {
+    margin-right: 5px;
+  }
+
   #tab-btn ul {
     padding-top: 30px;
   }
@@ -36,6 +45,14 @@
 @media (max-width:767px) {
   .privacy-table td, .privacy-table th {
     padding: 10px;
+  }
+
+  .footer .footer-bottom {
+    padding: 15px 0px !important;
+  }
+
+  .footer-p {
+    margin-bottom: 5px;
   }
 
   .privacy-title {

@@ -1145,3 +1145,16 @@ a:visited {
 #tab-cont>div {
   font-size: 18px;
   font-weight: 400 !important;
+}
+
+.menu-icon-size {
+  font-size: 35px;
+}
+
+.menu-color {
+  color: #fff;
+}
+
+.menu-icon-black {
+  color: #000 !important;
+}

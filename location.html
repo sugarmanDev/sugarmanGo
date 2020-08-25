@@ -41,7 +41,8 @@
       <a class="scroll-nav logo-r" href="./index.html"><img src="./assets/img/sugarman_go_logo@2x.png" alt="sugarmango_logo" class="main-logo"></a>
 
       <button class="navbar-toggler mobile-menu-place toggle-mobile-menu" type="button">
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <span class="material-icons menu-icon-size menu-color">menu</span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -266,8 +267,10 @@
       // 48
       if (scroll > 35) {
         $('.top-nav').addClass('fixed-head');
+        $('.material-icons').removeClass('menu-icon-black');
         if (scroll > 850) {
           $('.top-nav').addClass('fixed-head-white');
+          $('.material-icons').addClass('menu-icon-black');
         } else {
           $('.top-nav').removeClass('fixed-head-white');
         }
