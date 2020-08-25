@@ -30,6 +30,10 @@
 }
 
 @media (max-width:767px) {
+  .privacy-table td, .privacy-table th {
+    padding: 10px;
+  }
+
   .mobile_hide {
     display: none;
   }
