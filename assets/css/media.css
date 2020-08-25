@@ -1,109 +1,201 @@
-@media (max-width:991px){
-    .footer .footer-con-3 {
-        padding-bottom: 30px;
-        margin-bottom: 50px;
-    }
-    .footer-right{
-        padding-bottom: 50px;
-    }
-    .right-area{
-        display: none;
-    }
-    .half {
-        width: 100%;
-      }
+@media (max-width:991px) {
+  .footer .footer-con-3 {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
 
+  .footer-right {
+    padding-bottom: 50px;
+  }
+
+  .right-area {
+    display: none;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  .form-12 {
+    width: 80%;
+  }
+
+  .form-box h2 {
+    padding-left: 20px;
+  }
 }
 
-@media (max-width:767px){
-    .line-3{
-        display: none;
-    }
-    .footer .footer-con-3 li:nth-child(1){
-        margin-right: 40px;
-    }
-    .location-con-btn button {
-        margin-bottom: 15px;
-    }
-    .location-con-btn{
-        text-align: left;
-    }
-    .service-wrap2-line{
-        display: none;
-    }
-    .service-wrap2-con{
-        max-width: 50%;
-    }
+@media (max-width:767px) {
+  .mobile_hide {
+    display: none;
+  }
+
+  .price-wrap5 img {
+    margin: 0 auto 30px;
+  }
+
+  .price-wrap5 button {
+    margin: 30px auto 0px;
+  }
+
+  .price-wrap4 .price-table {
+    margin: 40px 0px 100px;
+  }
+
+  .price-wrap5-box {
+    padding: 40px;
+  }
+
+  .price-wrap2 {
+    padding-bottom: 100px;
+  }
+
+  .main-text.price-text img {
+    top: -40px;
+    right: 20%;
+  }
+
+  .price-text-con {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .price-maintxt {
+    font-size: 17px;
+  }
+
+  .mb-220 {
+    margin-bottom: 150px;
+  }
+
+  .service-wrap1 .service-wrap1-text {
+    font-size: 40px;
+  }
+
+  .service-wrap2 {
+    padding-bottom: 100px;
+  }
+
+  .service-wrap1 {
+    padding-bottom: 50px;
+  }
+
+  .main-btn-sec {
+    padding-top: 50px;
+  }
+
+  .main-img-sec .main-img {
+    padding-top: 50px;
+  }
+
+  .main-process-sec .process-text p {
+    margin-bottom: 50px;
+  }
+
+  .line-3 {
+    display: none;
+  }
+
+  .footer .footer-con-3 li:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  .location-con-btn button {
+    margin-bottom: 15px;
+  }
+
+  .location-con-btn {
+    text-align: left;
+  }
+
+  .service-wrap2-line {
+    display: none;
+  }
+
+  .service-wrap2-con {
+    max-width: 50%;
+  }
 }
 
-@media (max-width:767px) and (min-width:421px){
-    .main-process-sec .process-text{
-        max-width: 50%;
-    }
+@media (max-width:767px) and (min-width:421px) {
+  .main-process-sec .process-text {
+    max-width: 50%;
+  }
 }
 
-@media (max-width:562px){
-    .footer .footer-bottom ul li {
-        display: block;
-        float: none;
-    }
-    .main-banner-subtext{
-      font-size: 20px;
-    }
-    .main-banner-text{
-      font-size: 40px;
-    }
- 
+@media (max-width:562px) {
+  .footer .footer-bottom ul li {
+    display: block;
+    float: none;
+  }
+
+  .main-banner-subtext {
+    font-size: 20px;
+  }
+
+  .main-banner-text {
+    font-size: 40px;
+  }
 }
 
-@media(max-width:457px){
-    .line-1{
-        display: none;
-    }
-    .line-2{
-        display: none;
-    }
-    .footer ul li{
-        float: none;
-    }
-    .navbar-light .navbar-brand{
-        max-width: 50%;
-    }
+@media(max-width:457px) {
+  .line-1 {
+    display: none;
+  }
+
+  .line-2 {
+    display: none;
+  }
+
+  .footer ul li {
+    float: none;
+  }
+
+  .navbar-light .navbar-brand {
+    max-width: 50%;
+  }
 }
 
+@media (max-width:418px) {
+  .location-banner-subtext {
+    font-size: 45px;
+  }
 
-@media (max-width:418px){
-    .location-banner-subtext{
-        font-size: 45px;
-    }
-    .location-banner-text{
-        font-size: 18px;
-    }
-    .navbar {
-        padding: 20px 20px !important;
-    }
+  .location-banner-text {
+    font-size: 18px;
+  }
+
+  .navbar {
+    padding: 20px 20px !important;
+  }
 }
 
-@media (max-width:350px){
-    .location-banner-subtext{
-        font-size: 45px;
-    }
-    .location-banner-text{
-        font-size: 15px;
-    }
-    .event-banner{
-        font-size: 13px;
-    }
-    .event-banner button span{
-        font-size: 13px;
-    }
-    .main-banner-subtext{
-      font-size: 18px;
-    }
-    .main-banner-text{
-      font-size: 35px;
-    }
-    .service-wrap2-con{
-        max-width: 100%;
-    }
+@media (max-width:350px) {
+  .location-banner-subtext {
+    font-size: 45px;
+  }
+
+  .location-banner-text {
+    font-size: 15px;
+  }
+
+  .event-banner {
+    font-size: 13px;
+  }
+
+  .event-banner button span {
+    font-size: 13px;
+  }
+
+  .main-banner-subtext {
+    font-size: 18px;
+  }
+
+  .main-banner-text {
+    font-size: 35px;
+  }
+
+  .service-wrap2-con {
+    max-width: 100%;
+  }
 }

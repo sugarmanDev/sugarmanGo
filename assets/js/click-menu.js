@@ -23,13 +23,16 @@ mobileMenu += '</div>';
 
 $(document).on('click', '.toggle-mobile-menu', function() {
   $('.mobile-menu').toggle();
+
+  $('html').toggleClass('prevent-scroll')
+  $('body').toggleClass('prevent-scroll')
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
   $('body').append(mobileMenu);
 })
 
 $(document).on('click', '.event-banner-btn', function() {
   $('.event-banner').remove();
-  $('.top-nav').css('top','0px')
+  $('.top-nav').css('top', '0px')
 });

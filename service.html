@@ -148,7 +148,7 @@
   </div>
 
 
-  <section class="main-img-sec" style="margin-bottom: 224px;">
+  <section class="main-img-sec mb-220">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 main-img">
@@ -173,11 +173,11 @@
             <div class="col-12">
               <ul class="footer-con-2">
                 <li>
-                  <span>슈가맨고</span><strong class="line-1" style="color: #AEAEAE; margin-right: 20px;"> | </strong>
+                  <span>슈가맨고</span><strong class="line-1" style="color: #AEAEAE; margin-right: 10px;"> | </strong>
                 </li>
                 <li>
                   <span>대표이사 </span> 최성원
-                  <strong class="line-2" style="color: #AEAEAE; margin-right: 20px;"> | </strong>
+                  <strong class="line-2" style="color: #AEAEAE; margin-right: 10px;"> | </strong>
                 </li>
                 <li>
                   <span>사업자등록번호
@@ -190,7 +190,7 @@
                 <li>
                   <span>주소
                   </span>경기도 부천시 중동로 254번길 78 6F
-                  <strong class="line-3" style="color: #AEAEAE; margin-right: 20px;"> | </strong>
+                  <strong class="line-3" style="color: #AEAEAE; margin-right: 10px;"> | </strong>
                 </li>
                 <li>
                   <span>
@@ -217,14 +217,13 @@
       <div class="footer-line"></div>
     </div>
 
-    <div class="col-md-12 footer ">
+    <div class="col-lg-12">
       <div class="container main-container footer-bottom">
-        <ul>
-          <li>© 2020 sugarmango, All rights reserved</li>
-          <li>개인정보취급방침</li>
-          <li>이용약관</li>
-        </ul>
+        <p class="footer-p">© 2020 sugarmango, All rights reserved</p>
+        <a class="footer-a">개인정보취급방침</a>
+        <a class="footer-a">이용약관</a>
       </div>
+    </div>
   </section>
 
   <script>
@@ -233,12 +232,10 @@
       // 48
       if (scroll > 48) {
         $('.top-nav').addClass('fixed-head');
-        if (scroll > 950) {
-          $('.top-nav').addClass('fixed-head-white');
-        } else {
-          $('.top-nav').removeClass('fixed-head-white');
-        }
+        $('.top-nav').addClass('fixed-head-white');
       } else {
+        $('.top-nav').removeClass('fixed-head-white');
+
         $('.top-nav').removeClass('fixed-head');
       }
       console.log(scroll);
