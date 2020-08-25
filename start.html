@@ -18,6 +18,7 @@
   <!-- kakao map -->
   <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=95211038176c8b43a1fc3d12e01aed54"></script> -->
   <script src="./assets/js/click-menu.js"></script>
+  <script src="./assets/js/domain.js"></script>
 </head>
 
 <body>
@@ -274,6 +275,7 @@
         var formData = new FormData(form);
         var queryString = $('#formData').serialize();
         console.log(queryString);
+
 
         $.ajax({
           type: 'post',
