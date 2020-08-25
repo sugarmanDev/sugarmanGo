@@ -55,16 +55,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" style="color:#000" href="./location.html">위치</a>
+            <a class="nav-link" style="color: #000;" href="./location.html">위치</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:#000" href="./service.html">서비스</a>
+            <a class="nav-link" style="color: #000;" href="./service.html">서비스</a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-active" style="color:#000" href="./price.html">이용료</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color:#000">파트너</a>
+            <a class="nav-link" style="color: #000;">파트너</a>
           </li>
           <li class="nav-item">
             <button type="button" class="nav-bar-btn" onclick="location.href='./start.html'">시작하기</button>
@@ -107,7 +107,7 @@
         <div class="col-lg-3">
           <h3>고객 후기</h3>
         </div>
-      
+
         <div class="col-lg-9">
           <div id="tab-menu" class="profile-area">
             <div id="tab-btn">
@@ -137,7 +137,7 @@
     </div>
   </div>
 
-  
+
 
 
   <div class="price-wrap3">
@@ -300,8 +300,8 @@
     <div class="col-lg-12">
       <div class="container main-container footer-bottom">
         <p class="footer-p">© 2020 sugarmango, All rights reserved</p>
-        <a class="footer-a">개인정보취급방침</a>
-        <a class="footer-a">이용약관</a>
+        <a href="./privacy.html" class="footer-a">개인정보취급방침</a>
+        <!-- <a class="footer-a">이용약관</a> -->
       </div>
     </div>
   </section>
@@ -322,17 +322,17 @@
   </script>
 
   <script>
-     
-     var tabBtn = $("#tab-btn > ul > li");  
-     var tabCont = $("#tab-cont > div");      
-       
+
+     var tabBtn = $("#tab-btn > ul > li");
+     var tabCont = $("#tab-cont > div");
+
      tabCont.hide().eq(0).show();
-       
+
      tabBtn.click(function(){
-       var target = $(this);        
-       var index = target.index();   
-       tabBtn.removeClass("active");  
-       target.addClass("active");      
+       var target = $(this);
+       var index = target.index();
+       tabBtn.removeClass("active");
+       target.addClass("active");
        tabCont.css("display","none");
        tabCont.eq(index).css("display","block");
      });

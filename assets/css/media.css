@@ -1,7 +1,7 @@
 @media (max-width:991px) {
   .footer .footer-con-3 {
     padding-bottom: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .footer-right {
@@ -24,13 +24,20 @@
     padding-left: 20px;
   }
 
+  .footer ul {
+    margin-bottom: 0;
+  }
+  
   #tab-btn ul{
     padding-top: 30px;
   }
-  
 }
 
 @media (max-width:767px) {
+  .privacy-table td, .privacy-table th {
+    padding: 10px;
+  }
+
   .mobile_hide {
     display: none;
   }

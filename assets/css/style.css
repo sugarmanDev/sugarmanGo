@@ -57,7 +57,7 @@ ul {
   z-index: 999;
   height: 60px;
   font-weight: 400;
-  padding-right: 15px;
+  padding: 0px 5px 0px 10px;
 }
 
 /* nav */
@@ -79,7 +79,6 @@ ul {
 }
 
 .nav-active {
-  font-size: 17px;
   color: #23DBC2 !important;
 }
 
@@ -352,7 +351,11 @@ ul {
 }
 
 .footer-a {
-  margin-right: 15px;
+  color: #999999;
+}
+
+.footer-a:hover {
+  color: #999999;
 }
 
 .footer .footer-bottom-text {
@@ -868,8 +871,8 @@ select::-ms-expand {
   color: #000 !important;
 }
 
-.fixed-head-white .nav-link .nav-active {
-  color: #000 !important;
+.fixed-head-white .nav-active {
+  color: #23DBC2 !important;
 }
 
 .top-nav {
@@ -976,6 +979,142 @@ a:visited {
   font-weight: 600;
 }
 
+.success {
+  padding: 100px 0px 0px;
+}
+
+.success-btn {
+  border: 1px solid #23DBC2;
+  background-color: #23DBC2;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  margin: 15px auto;
+}
+
+.check-lottie {
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 190px;
+}
+
+.success-btn-box {
+  text-align: center;
+}
+
+.success-txt2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.check-gif {
+  background: url('../img/check-success.gif');
+  width: 80px;
+  height: 80px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 200px auto 0px;
+}
+
+/* 개인정보 취급방침 */
+.privacy-wrap {
+  padding: 150px 0px;
+}
+
+.privacy-title {
+  color: #23DBC2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.privacy-line {
+  width: 100%;
+  height: 3px;
+  background-color: #23DBC2;
+  margin: 0px 0px 30px;
+}
+
+.privacy-num {
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.privacy-txt {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.privacy-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.privacy-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #23DBC2;
+  color: white;
+  width: 25%;
+}
+
+.privacy-table td, .privacy-table th {
+  border: 1px solid #ddd;
+  padding: 25px;
+}
+
+.close {
+  width: 6%;
+  height: 10%;
+  position: absolute;
+  right: 2%;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #001AB8;
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.privacy-num1 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.privacy-info1 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0px;
+}
+
+.modal-dialog {
+  max-width: 700px;
+}
+
+.modal-content {
+  height: 450px;
+}
+
+.modal-body {
+  padding: 40px;
+}
+
 /* price tab menu */
 
 #tab-btn ul{
@@ -1007,4 +1146,3 @@ a:visited {
 #tab-cont > div{
   font-size: 18px;
   font-weight: 400 !important;
-}
