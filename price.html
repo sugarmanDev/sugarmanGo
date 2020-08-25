@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/media.css">
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
   <!-- kakao map -->
@@ -54,16 +55,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./location.html">위치</a>
+            <a class="nav-link" style="color:#000" href="./location.html">위치</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./service.html">서비스</a>
+            <a class="nav-link" style="color:#000" href="./service.html">서비스</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-active" href="./price.html">이용료</a>
+            <a class="nav-link nav-active" style="color:#000" href="./price.html">이용료</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">파트너</a>
+            <a class="nav-link" style="color:#000">파트너</a>
           </li>
           <li class="nav-item">
             <button type="button" class="nav-bar-btn" onclick="location.href='./start.html'">시작하기</button>
@@ -103,22 +104,40 @@
   <div class="price-wrap2">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h3>고객 후기</h3>
         </div>
-        <div class="col-md-9">
-          <div class="profile-area">
-            <img src="./assets/img/profile.jpg" class="active">
-            <img src="./assets/img/profile.jpg">
-            <img src="./assets/img/profile.jpg">
+      
+        <div class="col-lg-9">
+          <div id="tab-menu" class="profile-area">
+            <div id="tab-btn">
+              <ul>
+                <li class="active">
+                  <a><img src="./assets/img/profile.jpg" class="profileShow"></a>
+                </li>
+                <li>
+                  <a><img src="./assets/img/profile.jpg" class="profileShow"></a>
+                </li>
+                <li>
+                  <a><img src="./assets/img/profile.jpg" class="profileShow"></a>
+                </li>
+              </ul>
+            </div>
+            <div id="tab-cont" class="review-area">
+              <div>제품 포장까지 완벽하고 편리하게 사용하고 있습니다!<br /> 너무 완벽한데 어쪄죠? 백만번사용하세요!! a부터 z까지 배송이 이루어지니 너무너무 편합니다. 짱짱짱!!<br /> 아 그리고 올때 메로나요!!!</div>
+              <div>2. How would you like to receive a free foot massage with every step you take? That and much more now is entirely possible with MindInsole! These fantastic insoles are designed not just to relieve foot fatigue and cure achy feet, but actually to heal your body from the inside out.</div>
+              <div>3. MindInsole combines ancient wisdom with the latest technology to massage critical areas of your feet which promote health, improve blood circulation, relieve back pain, lower stress levels, and naturally boost endurance. Each insole makes use of 400 acupoints that were scientifically designed to massage critical areas of your feet. Besides, the insoles use 5 cooling magnets that help to balance your body's energy levels to make you feel great again!</div>
+            </div>
           </div>
-          <p class="review-area">
-            제품 포장까지 완벽하고 편리하게 사용하고 있습니다!<br /> 너무 완벽한데 어쪄죠? 백만번사용하세요!! a부터 z까지 배송이 이루어지니 너무너무 편합니다. 짱짱짱!!<br /> 아 그리고 올때 메로나요!!!
-          </p>
+        </div>
+
+
         </div>
       </div>
     </div>
   </div>
+
+  
 
 
   <div class="price-wrap3">
@@ -300,6 +319,24 @@
       }
       console.log(scroll);
     })
+  </script>
+
+  <script>
+     
+     var tabBtn = $("#tab-btn > ul > li");  
+     var tabCont = $("#tab-cont > div");      
+       
+     tabCont.hide().eq(0).show();
+       
+     tabBtn.click(function(){
+       var target = $(this);        
+       var index = target.index();   
+       tabBtn.removeClass("active");  
+       target.addClass("active");      
+       tabCont.css("display","none");
+       tabCont.eq(index).css("display","block");
+     });
+
   </script>
 
 
