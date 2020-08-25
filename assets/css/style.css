@@ -561,25 +561,6 @@ ul {
   padding-bottom: 145px;
 }
 
-.price-wrap2 img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 15px;
-  opacity: 0.5;
-  margin-bottom: 25px;
-  cursor: pointer;
-}
-
-.active {
-  border: 2px solid #23DBC2;
-  opacity: 1 !important;
-}
-
-.price-wrap2 .review-area {
-  font-size: 18px;
-}
-
 .price-wrap3 {
   text-align: center;
   padding-bottom: 180px;
@@ -1134,6 +1115,33 @@ a:visited {
   padding: 40px;
 }
 
-.show_review {
-  display: block !important;
+/* price tab menu */
+#tab-btn ul {
+  padding-left: 0;
+  margin-bottom: 0;
 }
+
+#tab-btn ul li {
+  display: inline-block;
+}
+
+#tab-btn ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  opacity: 0.5;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+#tab-btn .active img {
+  border: 2px solid #23DBC2;
+  opacity: 1 !important;
+  width: 62px;
+  height: 62px;
+}
+
+#tab-cont>div {
+  font-size: 18px;
+  font-weight: 400 !important;
