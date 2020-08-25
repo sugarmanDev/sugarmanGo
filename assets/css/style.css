@@ -57,7 +57,7 @@ ul {
   z-index: 999;
   height: 60px;
   font-weight: 400;
-  padding-right: 15px;
+  padding: 0px 5px 0px 10px;
 }
 
 /* nav */
@@ -79,7 +79,6 @@ ul {
 }
 
 .nav-active {
-  font-size: 17px;
   color: #23DBC2 !important;
 }
 
@@ -887,8 +886,8 @@ select::-ms-expand {
   color: #000 !important;
 }
 
-.fixed-head-white .nav-link .nav-active {
-  color: #000 !important;
+.fixed-head-white .nav-active {
+  color: #23DBC2 !important;
 }
 
 .top-nav {
