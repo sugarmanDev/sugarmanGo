@@ -37,6 +37,10 @@
     margin-right: 5px;
   }
 
+  .success-btn {
+    width: 100%;
+  }
+
   #tab-btn ul {
     padding-top: 30px;
   }
