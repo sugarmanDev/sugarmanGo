@@ -27,8 +27,8 @@
   .footer ul {
     margin-bottom: 0;
   }
-  
-  #tab-btn ul{
+
+  #tab-btn ul {
     padding-top: 30px;
   }
 }
@@ -36,6 +36,11 @@
 @media (max-width:767px) {
   .privacy-table td, .privacy-table th {
     padding: 10px;
+  }
+
+  .privacy-title {
+    font-size: 1.895rem;
+    margin-bottom: 30px;
   }
 
   .mobile_hide {
