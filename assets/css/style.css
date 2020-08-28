@@ -1221,10 +1221,10 @@ a:visited {
 }
 
 .review-img .img-back {
-  width: 100%;
-  max-width: 265px;
-  max-height: 265px;
+  width: 265px;
+  height: 265px;
   background-color: #FFFFFF;
+  margin: 0 auto;
 }
 
 .review-img {
@@ -1239,3 +1239,90 @@ a:visited {
 .mb-40 {
   margin-bottom: 40px;
 }
+
+/* partner modal */
+
+
+.review-modal{
+  border-top: 5px solid #23DBC2;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  word-break: keep-all;
+}
+
+.review-modal-close{
+  color: rgba(0, 0, 0, 0.54);
+  margin-right: 15px;
+}
+
+.review-modal-close span{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.review-modal-body .modal-title{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.review-line{
+  border: 1px solid #E1E1E1;
+  margin-bottom: 40px;
+}
+
+.review-modal-text img{
+  width: 41px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.review-modal-text .review-modal-text-con{
+  font-size: 20px;
+  letter-spacing: -0.63px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.review-modal-by{
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.review-con{
+  margin-bottom: 15px;
+}
+
+@media(max-width:1199px){
+  .review-con{
+    max-width: 33.3333%;
+  }
+}
+
+@media(max-width:991px){
+  .review-con{
+    max-width: 50%;
+  }
+}
+
+@media(max-width:552px){
+  .review-con{
+    max-width: 100%;
+  }
+}
+
+@media(max-width:290px){
+  .review-img .img-back {
+    max-width: 265px;
+    width: 100%;
+    max-height: 265px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+  }
+  .partner-wrap1 .partner-text-con{
+    font-size: 40px;
+  }
+}
+
+
+
