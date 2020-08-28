@@ -307,12 +307,20 @@
 
     })
 
-    
 
-    var element = document.getElementById('form_height');
-    var h = element.clientHeight;
+    $(window).resize(function () {
 
-    $('#start_back_img').css('height', h);
+      var element = document.getElementById('form_height');
+      var h = element.clientHeight;
+
+      if (matchMedia("screen and (max-width: 991px)").matches) {
+        $('#start_back_img').css('height', h);
+      } else {
+        $('#start_back_img').css('height', '100vh');
+      }
+
+    });
+
 
 
   </script>
