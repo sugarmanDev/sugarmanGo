@@ -186,9 +186,11 @@
       if (scroll > 48) {
         $('.top-nav').addClass('fixed-head');
         $('.top-nav').addClass('fixed-head-white');
+        $('.top-nav').addClass('shadow-sm');
       } else {
         $('.top-nav').removeClass('fixed-head-white');
         $('.top-nav').removeClass('fixed-head');
+        $('.top-nav').removeClass('shadow-sm');
       }
       console.log(scroll);
     })

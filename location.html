@@ -35,7 +35,7 @@
   </div>
 
   <!-- nav -->
-  <div class="navbar-wrap  scroll-nav shadow-sm top-nav">
+  <div class="navbar-wrap  scroll-nav top-nav">
     <nav class="navbar navbar-expand-lg navbar-light pt-2 pb-2">
       <a class="navbar-brand logo-w" href="./index.html">
         <img src="./assets/img/sugarman_go_logo_wh@2x.png" alt="sugarmango_logo" class="main-logo">
@@ -268,6 +268,7 @@
       // 48
       if (scroll > 35) {
         $('.top-nav').addClass('fixed-head');
+        $('.top-nav').addClass('shadow-sm');
         $('.material-icons').removeClass('menu-icon-black');
         if (scroll > 850) {
           $('.top-nav').addClass('fixed-head-white');
@@ -277,6 +278,7 @@
         }
       } else {
         $('.top-nav').removeClass('fixed-head');
+        $('.top-nav').removeClass('shadow-sm');
       }
       console.log(scroll);
     })

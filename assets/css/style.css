@@ -46,7 +46,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
+  max-height: 800px;
 }
 
 /* 탑 띠배너 */
@@ -506,7 +507,7 @@ ul {
 /* 이용료 페이지 */
 .price-wrap1 {
   padding-bottom: 130px;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .price-text-con {

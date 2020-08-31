@@ -35,7 +35,7 @@
   </div>
 
   <!-- nav -->
-  <div class="navbar-wrap  scroll-nav shadow-sm top-nav">
+  <div class="navbar-wrap  scroll-nav top-nav">
     <nav class="navbar navbar-expand-lg navbar-light pt-2 pb-2">
       <a class="navbar-brand logo-w" href="./index.html">
         <img src="./assets/img/sugarman_go_logo@2x.png" alt="sugarmango_logo" class="main-logo">
@@ -233,7 +233,7 @@
 
 
   <!-- kakao map -->
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=54fab25c704a5570ffbffb81b4cd3cdd"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=250d479551bc2d3b70d92839fc3eb6eb"></script>
 
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div
@@ -331,6 +331,7 @@
       // 48
       if (scroll > 48) {
         $('.top-nav').addClass('fixed-head');
+        $('.top-nav').addClass('shadow-sm');
         if (scroll > 950) {
           $('.top-nav').addClass('fixed-head-white');
         } else {
@@ -338,6 +339,7 @@
         }
       } else {
         $('.top-nav').removeClass('fixed-head');
+        $('.top-nav').removeClass('shadow-sm');
       }
       console.log(scroll);
     })

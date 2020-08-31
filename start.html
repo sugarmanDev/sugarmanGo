@@ -82,7 +82,7 @@
         <div class="row" style="margin-left:0px;margin-right:0px;">
           <div class="col-md-1"></div>
           <div class="col-md-4" id="form_height">
-            <div class="form-box">
+            <div class="form-box d-flex flex-column">
               <h2>견적 문의하기</h2>
 
               <div class="row">
@@ -291,9 +291,12 @@
       if (scroll > 48) {
         $('.top-nav').addClass('fixed-head');
         $('.top-nav').addClass('fixed-head-white');
+        $('.top-nav').addClass('shadow-sm');
+
       } else {
         $('.top-nav').removeClass('fixed-head-white');
         $('.top-nav').removeClass('fixed-head');
+        $('.top-nav').removeClass('shadow-sm');
       }
 
     })
