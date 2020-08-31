@@ -10,7 +10,7 @@ mobileMenu += '<ul>';
 mobileMenu += '      <li><a href="./location.html">위치</a></li>';
 mobileMenu += '      <li><a href="./service.html">서비스</a></li>';
 mobileMenu += '      <li><a href="./price.html">이용료</a></li>';
-mobileMenu += '      <li><a>파트너</a></li>';
+mobileMenu += '      <li><a href="./partner.html">파트너</a></li>';
 mobileMenu += '    </ul>';
 mobileMenu += '    <a href="./start.html">';
 mobileMenu += '      <button type="button">';
