@@ -5,6 +5,28 @@
     margin-top: 0px;
   }
 
+  .partner-wrap1 {
+    padding: 150px 0px 120px;
+  }
+
+  .partner-maintxt {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .partner-text {
+    padding: 65px 15px 20px;
+  }
+
+  .partner-wrap1 .partner-text-con {
+    font-size: 35px;
+  }
+
+  .partner-wrap1 .partner-text img {
+    top: 17px;
+    left: 3%;
+  }
+
   .footer-right {
     padding-bottom: 30px;
   }
