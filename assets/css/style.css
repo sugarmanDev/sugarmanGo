@@ -42,7 +42,7 @@ ul {
 
 /* 메인페이지 메인배너 */
 .main-banner-wrap {
-  background-image: url(../img/main_banner_shadow@2x.jpg);
+  background-image: url(../img/main_banner_shadow.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -771,7 +771,7 @@ input[type="checkbox"]:checked+label {
 
 /* location.html */
 .location-banner-wrap {
-  background-image: url(../img/main_banner2@2x.jpg);
+  background-image: url(../img/main_banner2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
