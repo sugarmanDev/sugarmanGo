@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>슈가맨 고</title>
+  <title>슈가맨고</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <script src="./assets/js/click-menu.js"></script>
+  <script src="./assets/js/domain.js"></script>
 </head>
 
 <body>
@@ -170,7 +171,7 @@
                   <div class="col-md-8 review-modal-text">
                     <img src="./assets/img/icon-1@2x.png" alt="">
                     <p class="review-modal-text-con"></p>
-                    <p class="review-modal-by">- -</p>
+                    <p class="review-modal-by"></p>
                   </div>
                   <div class="col-md-4"></div>
                 </div>
@@ -184,7 +185,7 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -194,7 +195,6 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -202,7 +202,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -272,38 +272,23 @@
 
   <script>
     var clientArr = [];
+
     clientArr[0] = [
-      './assets/img/icon-1@2x.png', '리엔느와르',
-      `
-      슈가맨고 전담 택배사와 담당 기사님이 계셔서 배송문제가 빠르게 처리해주세요.
-      쇼핑몰을 운영할때 가장 신경쓰였던 부분이 배송문제거든요.
-      슈가맨고가 맡아서 해결해주니 디자인 / 마케팅에 보다 집중할 수 있었습니다!
-      `
+      './assets/img/icon-1@2x.png', '- 리엔느와르 -', '슈가맨고 전담 택배사와 담당 기사님이 계셔서 배송문제가 빠르게 처리해주세요. 쇼핑몰을 운영할때 가장 신경쓰였던 부분이 배송문제거든요. 슈가맨고가 맡아서 해결해주니 디자인 / 마케팅에 보다 집중할 수 있었습니다!      '
     ];
-    clientArr[1] = ['./assets/img/icon-2@2x.png', '인정상회',
-      `
-      물량도 점점 많아지고 요즘은 무료배송이 대세다 보니 택배비도 점점 부담스러웠던 참에 슈가맨고를 알게됐어요.
-      비용은 굉장히 저렴하고 물류 서비스는 슈가맨고에서 다 해결해주니 업무도, 마음도 가볍네요^^
-      합리적인 비용에 배송, 포장까지 다양한 서비스를 이용할 수 있어 굉장히 효율적입니다.
-      `
+    clientArr[1] = ['./assets/img/icon-2@2x.png', '- 인정상회 -',
+      '물량도 점점 많아지고 요즘은 무료배송이 대세다 보니 택배비도 점점 부담스러웠던 참에 슈가맨고를 알게됐어요. 비용은 굉장히 저렴하고 물류 서비스는 슈가맨고에서 다 해결해주니 업무도, 마음도 가볍네요 ^^ 합리적인 비용에 배송, 포장까지 다양한 서비스를 이용할 수 있어 굉장히 효율적입니다.'
     ];
-    clientArr[2] = ['./assets/img/icon-3@2x.png', '뚝딱뚝딱꿉이네',
-      `
-      물량이 적었을때부터 픽업 및 배송이 가능하도록 도와주셔서
-      지금은 더욱더 성장하게 되었습니다. 슈가맨고는 저희 회사에 없어서는 안 될 파트너입니다.
-      `
+    clientArr[2] = ['./assets/img/icon-3@2x.png', '- 뚝딱뚝딱꿉이네 -',
+      '물량이 적었을때부터 픽업 및 배송이 가능하도록 도와주셔서 지금은 더욱더 성장하게 되었습니다.슈가맨고는 저희 회사에 없어서는 안 될 파트너입니다.'
     ];
-    clientArr[3] = ['./assets/img/icon-4@2x.png', '다큐멘터리24h',
-      `
-      혼자 사업체을 운영하다보니 할 일이 많은데 택배 배송에 대한 부분은 당일 출고로 인해
-      대부분 다음날 배송되어 고객들의 만족도 높고 배송지연에 대한
-      문의가 현저히 줄어서 다른 일에 더 집중할수 있어서 매출이 2배이상 증가했어요.
-      `
+    clientArr[3] = ['./assets/img/icon-4@2x.png', '- 다큐멘터리24h -',
+      '혼자 사업체을 운영하다보니 할 일이 많은데 택배 배송에 대한 부분은 당일 출고로 인해 대부분 다음날 배송되어 고객들의 만족도 높고 배송지연에 대한 문의가 현저히 줄어서 다른 일에 더 집중할수 있어서 매출이 2배이상 증가했어요.'
     ];
 
     $(document).on('click', '.img-back img', function() {
       var indexVal = $(".img-back img").index(this);
-      console.log(clientArr[indexVal][0]);
+      // console.log(clientArr[indexVal][0]);
 
       $('.review-modal-by').html(clientArr[indexVal][1]);
       $('.review-modal-text-con').html(clientArr[indexVal][2])

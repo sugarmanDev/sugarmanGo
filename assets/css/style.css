@@ -1103,6 +1103,7 @@ a:visited {
   opacity: 0.5;
   margin-bottom: 25px;
   cursor: pointer;
+  border: 2px solid #e1e1e1;
 }
 
 #tab-btn .active img {
@@ -1233,6 +1234,7 @@ a:visited {
 /* partner modal */
 .review-modal {
   border-top: 5px solid #23DBC2;
+  width: 700px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   background-color: #fff;
   word-break: keep-all;
