@@ -1281,6 +1281,12 @@ a:visited {
   cursor: pointer;
 }
 
+.img-area {
+  font-size: 60px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
 @media(max-width:1199px) {
   .review-con {
     max-width: 33.3333%;
