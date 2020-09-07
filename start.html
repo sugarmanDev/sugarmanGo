@@ -98,6 +98,8 @@
             <div class="form-box">
               <h2>견적 문의하기</h2>
 
+              <input type="hidden" id="service" name="service">
+
               <div class="row">
                 <div class="col-lg-6">
                   <label for="name">이름<span>*</span></label>
@@ -116,13 +118,43 @@
                   <input type="number" id="phone" name="phone" required class="form-input">
                 </div>
                 <div class="col-lg-6">
-                  <label for="name">회사명</label>
+                  <label for="name">회사명<span>*</span></label>
                   <input type="text" id="company" name="company" class="form-input">
                 </div>
                 <div class="col-lg-6">
                   <label for="phone">자주 쓰는 플랫폼<span>*</span></label>
                   <input type="text" id="platform" name="platform" class="form-input" placeholder="ex) 스토어팜, G마켓" required>
                 </div>
+
+                <div class="col-lg-12">
+                  <label for="phone">원하는 서비스(중복 선택 가능)<span>*</span></label><br>
+                  <div class="check-item">
+                    <div class="ddd" id="service"></div>
+                    <label for="service" class="service-label" data-value="픽업"></label>
+                    <p class="service-txt">픽업</p>
+                  </div>
+                  <div class="check-item">
+                    <div class="ddd" id="service"></div>
+                    <label for="service" class="service-label" data-value="포장"></label>
+                    <p class="service-txt">포장</p>
+                  </div>
+                  <div class="check-item">
+                    <div class="ddd" id="service"></div>
+                    <label for="service" class="service-label" data-value="보관"></label>
+                    <p class="service-txt">보관</p>
+                  </div>
+                  <div class="check-item">
+                    <div class="ddd" id="service"></div>
+                    <label for="service" class="service-label" data-value="S/W 프로그램"></label>
+                    <p class="service-txt">S/W 프로그램</p>
+                  </div>
+                </div>
+
+
+
+
+
+
                 <div class="col-lg-12">
                   <label for="phone">월 택배 건수<span>*</span></label>
                   <input type="text" id="delivery_count" name="delivery_count" class="form-input" required>
@@ -154,15 +186,11 @@
 
                           <p class="privacy-num1">2. 개인정보의 수집 필수 항목</p>
                           <p class="privacy-info1">
-                            - 이름, 지역, 이메일, 연락처, 자주 쓰는 플랫폼, 월 택배 건수
+                            - 이름, 지역, 이메일, 연락처, 회사명, 자주 쓰는 플랫폼, 월 택배 건수, 원하는 서비스
                           </p>
 
-                          <p class="privacy-num1">3. 개인정보의 수집 선택 항목</p>
-                          <p class="privacy-info1">
-                            - 회사명, 자주 쓰는 플랫폼, 월 택배 건수
-                          </p>
 
-                          <p class="privacy-num1">4. 개인정보의 보유 • 이용 기간</p>
+                          <p class="privacy-num1">3. 개인정보의 보유 • 이용 기간</p>
                           <p class="privacy-info1">
                             - 승인하신 때로부터 1년
                           </p>
@@ -255,8 +283,41 @@
     </div>
   </section>
 
+
   <script>
+    // var service = $('#service').val();
+    // var serviceArr = service.split(',');
+    //
+    // for (var idx = 0; idx < serviceArr.length; idx++) {
+    //   if (serviceArr[idx] != '') {
+    //     $('.service-label').each(function() {
+    //       if (serviceArr[idx] == $(this).attr('data-value')) {
+    //         $(this).addClass('label--clicked');
+    //       }
+    //     })
+    //   }
+    // }
+
+    $(document).on('click', '.service-label', function() {
+      $(this).toggleClass("label--clicked");
+    });
+
+
     function checkForm() {
+
+      var checked = '';
+      $('.label--clicked').each(function() {
+        checked += $(this).attr('data-value') + ',';
+      })
+
+      if (checked == '') {
+        alert('원하는 서비스를 선택해주세요.');
+        return false;
+      }
+      console.log(checked);
+      $('#service').val(checked);
+
+      // console.log('서비스들 : ', services);
 
       if (confirm('저장하시겠습니까?') == true) {
 
@@ -265,7 +326,7 @@
         var form = $('#formData')[0];
         var formData = new FormData(form);
         var queryString = $('#formData').serialize();
-        console.log(queryString);
+        // console.log(queryString);
 
 
         $.ajax({

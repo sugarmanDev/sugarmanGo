@@ -740,6 +740,12 @@ input[type="checkbox"] {
   height: 1px;
 }
 
+.ddd {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
 input[id="agree"]+label {
   display: inline-block;
   width: 20px;
@@ -748,8 +754,32 @@ input[id="agree"]+label {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked+label {
+.service-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+input[id="agree"]:checked+label {
   background: url(../img/check_box.png) no-repeat center/25px 25px;
+}
+
+.label--clicked {
+  background: url(../img/check_box.png) no-repeat center/25px 25px;
+}
+
+.check-item {
+  display: inline-block;
+  margin: 10px 10px 10px 0px;
+}
+
+.service-txt {
+  position: unset;
+  margin-top: -35px;
+  margin-left: 35px;
+  font-size: 15px;
 }
 
 .agree-txt {
@@ -1075,11 +1105,11 @@ a:visited {
 }
 
 .modal-content {
-  height: 450px;
+  height: auto;
 }
 
 .modal-body {
-  padding: 40px;
+  padding: 50px;
 }
 
 /* price tab menu */
